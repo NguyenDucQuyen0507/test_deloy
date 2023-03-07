@@ -1,0 +1,12 @@
+npx create-react-app quyen
+npm i zustand --save
+
+Chúng ta sẽ tạo ra một cái hooks lưu trữ file dùng để tạo ra các chức năng mình cần.
+Ở file nào cần lấy thì chỉ gọi tên function trong hooks đó ra. Sau đó ta lấy từng chức năng riêng trong function đó ra
+
+Trong zustand có một persist dùng để lưu trữ giá trị vào localStore để khi reload lại trnag thì dữ liệu vẫn còn.
+ import { persist } from "zustand/middleware"; 
+ rồi bỏ persit tronng create(persist(set,get)=>{})
+
+
+//Bây h ta sẽ tọa giỏ hàng
